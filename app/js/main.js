@@ -22,13 +22,12 @@ function handleClick(type) {
 
 function encodeText(text) {
 
-	const phrase = "зазон";
+	const phrase = document.getElementById('phrase').value.toLowerCase() || "зазон";
 	let string = "";
 
 	text.toLowerCase();
 
 	newText = text.split(/[^а-яё]/);
-	console.log(newText);
 
 	for (word of newText) {
 
